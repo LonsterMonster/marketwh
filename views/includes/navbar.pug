@@ -1,0 +1,24 @@
+nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top
+  .container
+    a.navbar-brand(href='index.php')
+      img(src='', alt='MarketWh.TK', border='0')
+    a.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+      span.navbar-toggler-icon
+    #navbarResponsive.collapse.navbar-collapse.dropdown
+      a.nav-link.btn.btn-dark(type='button', href='index.php') Trading
+      a.nav-link.btn.btn-dark(type='button', href='Servers/') Servers
+      a.nav-link.btn.btn-dark(href='about.php') About
+      a.nav-link.btn.btn-dark(href='services.php') Services
+      .dropdown
+        a#navbarDropdownBlog.nav-link.btn.btn-dark(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          | Contact Us
+        #dropdown.dropdown-menu
+          a.dropdown-item(href='mailto:lonniegibson16@gmail.com') Email
+          a.dropdown-item(href='https://www.facebook.com/MarketWhtk-2251565408193175/') Facebook
+          a.dropdown-item(href='https://steamcommunity.com/groups/MarketWH') Steam
+      .dropdown
+        a#navbarDropdownBlog.nav-link(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false')
+          img(src='', alt='Steam Avatar')
+        #dropdown.dropdown-menu
+          a.dropdown-item(href='User/Profile')  My Profile
+          a.dropdown-item(href='?logout') Logout

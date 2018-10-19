@@ -1,0 +1,401 @@
+meta(charset='UTF-8')
+title MarketWh | Trading
+link(rel='stylesheet', href='https://fonts.googleapis.com/css?family=Droid+Sans:400,700')
+meta(name='viewport', content='width=device-width, initial-scale=1, shrink-to-fit=yes')
+meta(name='description', content='')
+meta(name='author', content='')
+// Bootstrap core CSS
+link(href='https://LonsterMonster.github.io/Files/marketwh/vendor/bootstrap/css/bootstrap.min.css', rel='stylesheet')
+link(href='https://LonsterMonster.github.io/Files/marketwh/Content/htmlcontent.css', rel='stylesheet')
+link(href='https://LonsterMonster.github.io/Files/marketwh/Content/ads.css', rel='stylesheet')
+link(rel='stylesheet', type='text/css', href='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.css')
+link(rel='stylesheet', type='text/css', href='https://LonsterMonster.github.io/Files/marketwh/css/modern-business.css')
+link(rel='stylesheet', href='https://LonsterMonster.github.io/Files/marketwh/css/custom.css')
+// Custom styles for this template
+link(rel='stylesheet', href='https://use.fontawesome.com/releases/v5.2.0/css/all.css', integrity='sha384-hWVjflwFxL6sNzntih27bfxkr27PmbbK/iSvJ+a4+0owXq79v+lsFkW54bOGbiDQ', crossorigin='anonymous')
+style.
+	.button5 {background-color: #555555 color:white} /* Black */
+	.button4 {border-radius: 12px;}
+	.loader {
+	border: 16px solid #f3f3f3; /* Light grey */
+	border-top: 16px solid #3498db; /* Blue */
+	border-radius: 50%;
+	width: 120px;
+	height: 120px;
+	animation: spin 2s linear infinite;
+	}
+	@keyframes spin {
+	0% { transform: rotate(0deg); }
+	100% { transform: rotate(360deg); }
+	}
+	@import url(https://fonts.googleapis.com/css?family=Roboto+Slab:400,700);
+	body {
+	text-align: center;
+	padding: 0px 0px 96x;
+	font-family: 'Roboto Slab', serif;
+	}
+	h1, h2 {
+	margin-bottom: 48px;
+	font-weight: normal;
+	}
+	.button {
+	width: auto;
+	display: inline-block;
+	padding: 0 18px 0 6px;
+	border: 0 none;
+	border-radius: 5px;
+	text-decoration: none;
+	transition: all 250ms linear;
+	}
+	.button:hover {
+	text-decoration: none;
+	}
+	.button--social-login {
+	margin-bottom: 12px;
+	margin-right: 12px;
+	color: white;
+	height: 50px;
+	line-height: 46px;
+	position: relative;
+	text-align: left;
+	}
+	.button--social-login .icon {
+	margin-right: 12px;
+	font-size: 24px;
+	line-height: 24px;
+	width: 42px;
+	height: 24px;
+	text-align: center;
+	display: inline-block;
+	position: relative;
+	top: 4px;
+	}
+	.button--social-login .icon:before {
+	display: inline-block;
+	width: 40px;
+	}
+	.button--social-login .icon:after {
+	content: "";
+	}
+	.button--facebook {
+	background-color: #4b70ab;
+	border: 1px solid #3b5988;
+	}
+	.button--facebook .icon {
+	border-right: 1px solid #3b5988;
+	}
+	.button--facebook .icon:after {
+	border-right: 1px solid #6b8bbe;
+	}
+	.button--facebook:hover {
+	background-color: #436499;
+	}
+	.button--linkedin {
+	background-color: #0087be;
+	border: 1px solid #00638b;
+	}
+	.button--linkedin .icon {
+	border-right: 1px solid #00638b;
+	}
+	.button--linkedin .icon:after {
+	border-right: 1px solid #00abf1;
+	}
+	.button--linkedin:hover {
+	background-color: #0075a5;
+	}
+	.button--google {
+	background-color: #3f85f4;
+	border: 1px solid #0f66f1;
+	}
+	.button--google .icon {
+	border-right: 1px solid #0f66f1;
+	}
+	.button--google .icon:after {
+	border-right: 1px solid #6fa4f7;
+	}
+	.button--google:hover {
+	background-color: #2776f3;
+	}
+	.button--twitter {
+	background-color: #3b94d9;
+	border: 1px solid #257abc;
+	}
+	.button--twitter .icon {
+	border-right: 1px solid #257abc;
+	}
+	.button--twitter .icon:after {
+	border-right: 1px solid #66abe1;
+	}
+	.button--twitter:hover {
+	background-color: #2988d2;
+	}
+	.button--yahoo {
+	background-color: #500095;
+	border: 1px solid #350062;
+	}
+	.button--yahoo .icon {
+	border-right: 1px solid #350062;
+	}
+	.button--yahoo .icon:after {
+	border-right: 1px solid #6b00c8;
+	}
+	.button--yahoo:hover {
+	background-color: #42007c;
+	}
+	.button--openid {
+	background-color: #f78c40;
+	border: 1px solid #f56f0f;
+	}
+	.button--openid .icon {
+	border-right: 1px solid #f56f0f;
+	}
+	.button--openid .icon:after {
+	border-right: 1px solid #f9a971;
+	}
+	.button--openid:hover {
+	background-color: #f67d28;
+	}
+	.button--googleplus {
+	background-color: #dd4b39;
+	border: 1px solid #c23321;
+	}
+	.button--googleplus .icon {
+	border-right: 1px solid #c23321;
+	}
+	.button--googleplus .icon:after {
+	border-right: 1px solid #e47365;
+	}
+	.button--googleplus:hover {
+	background-color: #d73925;
+	}
+	.button--dropbox {
+	background-color: #007de1;
+	border: 1px solid #0061ae;
+	}
+	.button--dropbox .icon {
+	border-right: 1px solid #0061ae;
+	}
+	.button--dropbox .icon:after {
+	border-right: 1px solid #1597ff;
+	}
+	.button--dropbox:hover {
+	background-color: #006fc8;
+	}
+	.button--github {
+	background-color: #333;
+	border: 1px solid #1a1a1a;
+	}
+	.button--github .icon {
+	border-right: 1px solid #1a1a1a;
+	}
+	.button--github .icon:after {
+	border-right: 1px solid #4d4d4d;
+	}
+	.button--github:hover {
+	background-color: #262626;
+	}
+	.button--bitbucket {
+	background-color: #205081;
+	border: 1px solid #163758;
+	}
+	.button--bitbucket .icon {
+	border-right: 1px solid #163758;
+	}
+	.button--bitbucket .icon:after {
+	border-right: 1px solid #2a69aa;
+	}
+	.button--bitbucket:hover {
+	background-color: #1b436d;
+	}
+	.button--steam {
+	background-color: #205081;
+	border: 1px solid #163758;
+	}
+	.button--steam .icon {
+	border-right: 1px solid #163758;
+	}
+	.button--steam .icon:after {
+	border-right: 1px solid #2a69aa;
+	}
+	.button--steam:hover {
+	background-color: #1b436d;
+	}
+	.button--soundcloud {
+	background-color: #f50;
+	border: 1px solid #c40;
+	}
+	.button--soundcloud .icon {
+	border-right: 1px solid #c40;
+	}
+	.button--soundcloud .icon:after {
+	border-right: 1px solid #f73;
+	}
+	.button--soundcloud:hover {
+	background-color: #e64d00;
+	}
+	.button--spotify {
+	background-color: #2ebd59;
+	border: 1px solid #249446;
+	}
+	.button--spotify .icon {
+	border-right: 1px solid #249446;
+	}
+	.button--spotify .icon:after {
+	border-right: 1px solid #4bd374;
+	}
+	.button--spotify:hover {
+	background-color: #29a84f;
+	}
+	.button--microsoft {
+	background-color: #00a4ef;
+	border: 1px solid #0081bc;
+	}
+	.button--microsoft .icon {
+	border-right: 1px solid #0081bc;
+	}
+	.button--microsoft .icon:after {
+	border-right: 1px solid #23baff;
+	}
+	.button--microsoft:hover {
+	background-color: #0093d6;
+	}
+	.button--flickr {
+	background-color: #ff0084;
+	border: 1px solid #cc006a;
+	}
+	.button--flickr .icon {
+	border-right: 1px solid #cc006a;
+	}
+	.button--flickr .icon:after {
+	border-right: 1px solid #ff339d;
+	}
+	.button--flickr:hover {
+	background-color: #e60077;
+	}
+	* entire container, keeps perspective */
+	.flip-container {
+	perspective: 1000px;
+	}
+	/* flip the pane when hovered */
+	.flip-container:hover .flipper, .flip-container.hover .flipper {
+	transform: rotateY(180deg);
+	}
+	.flip-container, .front, .back {
+	width: 320px;
+	height: 480px;
+	}
+	/* flip speed goes here */
+	.flipper {
+	transition: 0.6s;
+	transform-style: preserve-3d;
+	position: relative;
+	}
+	/* hide back of pane during swap */
+	.front, .back {
+	backface-visibility: hidden;
+	position: absolute;
+	top: 0;
+	left: 0;
+	}
+	/* front pane, placed above back */
+	.front {
+	z-index: 2;
+	/* for firefox 31 */
+	transform: rotateY(0deg);
+	}
+	/* back, initially hidden pane */
+	.back {
+	transform: rotateY(180deg);
+	}
+	.flex-container {
+	display: flex;
+	flex-direction: row;
+	}
+	/* Container holding the image and the text */
+	.Topcontainer {
+	position: relative;
+	text-align: center;
+	color: white;
+	}
+	/* Bottom left text */
+	.bottom-left {
+	position: absolute;
+	bottom: 8px;
+	left: 16px;
+	}
+	/* Top left text */
+	.top-left {
+	position: absolute;
+	top: 8px;
+	left: 16px;
+	}
+	/* Top right text */
+	.top-right {
+	position: absolute;
+	top: 8px;
+	right: 16px;
+	}
+	/* Bottom right text */
+	.bottom-right {
+	position: absolute;
+	bottom: 8px;
+	right: 16px;
+	}
+	/* Centered text */
+	.centered {
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	transform: translate(-50%, -50%);
+	}
+	.Welcome {
+	width: 101.5%;
+	height: 400;
+	}
+	.dot {
+	height: 25px;
+	width: 25px;
+	background-color: #A6C143;
+	border-radius: 50%;
+	display: inline-block;
+	}
+	.imagery {
+	width: 100%;
+	height: auto;
+	}
+	#rcorners1 {
+	border-radius: 25px;
+	width: auto;
+	height: auto;
+	}
+	#rcorners2 {
+	border-radius: 25px;
+	width: auto;
+	height: auto;
+	}
+	.stitched {
+	padding: 20px;
+	margin: 10px;
+	color: #fff;
+	font-size: 21px;
+	font-weight: bold;
+	line-height: 1.3em;
+	border: 2px dashed #fff;
+	border-radius: 10px;
+	font-weight: normal;
+	}
+	.dropdown-submenu {
+	position: relative;
+	}
+	.dropdown-submenu .dropdown-menu {
+	top: 0;
+	left: 100%;
+	margin-top: -1px;
+	}
+script(src='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/3.0.3/cookieconsent.min.js')
+	// Begin Cookie Consent plugin by Silktide - http://silktide.com/cookieconsent
+script(type='text/javascript').
+	window.cookieconsent_options = {"message":"This website uses cookies to ensure you get the best experience on our website","dismiss":"Got it!","learnMore":"More info","link":"http://betterbot.000webhostapp.com","theme":"dark-floating"};
+script(type='text/javascript', src='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/cookieconsent.min.js')
+	// End Cookie Consent plugin
+link(rel='stylesheet', type='text/css', href='//cdnjs.cloudflare.com/ajax/libs/cookieconsent2/1.0.10/dark-floating.css')
