@@ -1,0 +1,288 @@
+
+
+include ./includes/head.pug
+
+
+
+
+
+body
+	nav.navbar.fixed-top.navbar-expand-lg.navbar-dark.bg-dark.fixed-top.text-White
+		.container
+			div(style='float:left')
+			a.navbar-brand(href='')
+				img(src='', alt='MarketWh.TK', border='0')
+			a.btn.btn-success(href='../FAQ', role='button')
+				i.fas.fa-flask
+					|  BETA
+			a.navbar-toggler.navbar-toggler-right(type='button', data-toggle='collapse', data-target='#navbarResponsive', aria-controls='navbarResponsive', aria-expanded='false', aria-label='Toggle navigation')
+				span.navbar-toggler-icon
+				#navbarResponsive.collapse.navbar-collapse.dropdown
+					a.nav-link.btn.btn-dark(type='button', href='/trading') Trading
+					// <a class="nav-link btn btn-dark" type="button" href="../../../Servers/">Servers</a>
+					a.nav-link.btn.btn-dark(href='../About_Us/') About
+					a.nav-link.btn.btn-dark(href='../FAQ/') FAQ
+					.dropdown
+						a#navbarDropdownBlog.nav-link.btn.btn-dark(href='#', data-toggle='dropdown', aria-haspopup='true', aria-expanded='false') Contact Us
+							#dropdown.dropdown-menu
+								a.dropdown-item(href='mailto:lonniegibson16@gmail.com') Email
+								a.dropdown-item(href='https://www.facebook.com/MarketWhtk-2251565408193175/') Facebook
+								a.dropdown-item(href='https://steamcommunity.com/groups/MarketWH') Steam
+					a.button.button--social-login.button--steam(href='auth/steam')
+						i.icon.fab.fa-steam(data-toggle='modal', data-target='#myModal')
+						| Login With Steam
+
+	.Topcontainer
+		img.center-fit.Welcome(src='https://d2v9y0dukr6mq2.cloudfront.net/video/thumbnail/e4Gpia8/footage-of-dust-over-a-dark-blue-background-floating-all-arround3_4hrs-dasl__F0000.png')
+	.top-left(style='font-size: 250%;')
+		font(face='verdana')
+		br
+		br
+		| Welcome to MarketWH.tk
+	.top-left(style='font-size: 150%;')
+		br
+		br
+		br
+		br
+		br
+		| Revolutionizing Trading 1 Trade at a time
+		br
+	.container
+		br
+		br
+		br
+		header
+			.container 
+				#Page1.page(style='')
+					.container(style='color:black float:center')
+						.card-group.Center
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_1');")
+								.card-body.text-center
+									p.card-text Weapons
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_2');")
+								.card-body.text-center
+									p.card-text Hats
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_3');")
+								.card-body.text-center
+									p.card-text Keys
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_4');")
+								.card-body.text-center
+									p.card-text MvM Parts
+						br
+						br
+						.card-group.Center
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_5');")
+								.card-body.text-center
+									p.card-text TF2 Skins
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_6');")
+								.card-body.text-center
+									p.card-text Stranges
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_7');")
+								.card-body.text-center
+									p.card-text Unusuals
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_8');")
+								.card-body.text-center
+									p.card-text Killstreak Kits
+						br
+						br
+						.card-group.Center
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_9');")
+								.card-body.text-center
+									p.card-text CSGO Skins
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_10');")
+								.card-body.text-center
+									p.card-text Steam cards
+							button.card.bg-warning(style='width:200px', onclick="show('Page2_11');")
+								.card-body.text-center
+									p.card-text Steam Games
+				#Page2_1.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/Weapons/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy Weapons
+							a(href='Trading/sell/Weapons/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Weapons
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_2.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/craft_hats/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy Hats
+							a(href='Trading/sell/craft_hats/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Hats
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_3.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/Keys/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy Keys
+							a(href='Trading/sell/Keys/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Keys
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_4.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/MvM_Parts/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy MvM Parts
+							a(href='Trading/sell/MvM_Parts/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell MvM Parts
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_5.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/TF2_Skins/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy TF2 Skins
+							a(href='Trading/sell/TF2_Skins/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell TF2 Skins
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_6.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/Stranges/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy Stranges
+							a(href='Trading/sell/Stranges/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Stranges
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_7.page(style='display:none')
+						br
+						.container(style='color:black float:center')
+							.card-group.Center
+								a(href='Trading/buy/Unusuals/')
+									button.card.bg-warning(style='width:200px')
+										.card-body.text-center
+											p.card-text Buy Unusuals
+								a(href='Trading/sell/Unusuals/')
+									button.card.bg-warning(style='width:200px')
+										.card-body.text-center
+											p.card-text Sell Unusuals
+								button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+									.card-body.text-center
+										p.card-text Go Back
+						br
+						br
+				#Page2_8.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/Killstreak_Kits/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy Killstreak Kits
+							a(href='Trading/sell/Killstreak_Kits/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Killstreak Kits
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_9.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/CSGO_Skins/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy CSGO Skins
+							a(href='Trading/sell/CSGO_Skins/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell CSGO Skins
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_10.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/Steam_Cards/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Buy Steam Cards
+							a(href='Trading/sell/Steam_Cards/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Steam Cards
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+				#Page2_11.page(style='display:none')
+					br
+					.container(style='color:black float:center')
+						.card-group.Center
+							a(href='Trading/buy/Steam_Games/')
+								button.card.bg-warning(style='width:200px')
+										.card-body.text-center
+											p.card-text Buy Steam Games
+							a(href='Trading/sell/Steam_Games/')
+								button.card.bg-warning(style='width:200px')
+									.card-body.text-center
+										p.card-text Sell Steam Games
+							button.card.bg-warning(style='width:200px', onclick="show('Page1');")
+								.card-body.text-center
+									p.card-text Go Back
+						br
+						br
+	br
+	br
+	br
+	include ./includes/footer.pug
