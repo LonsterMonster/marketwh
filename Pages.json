@@ -1,0 +1,127 @@
+{
+
+	"main": {
+
+		"status": {
+
+			"bot": "online",
+
+			"steam": "online",
+
+			"trade": "online"
+
+		}
+
+	},
+
+	"About": {
+
+		"Admins": {
+
+			"Steamid": {
+
+				"76561198076819824": {
+
+					"Profile": {
+
+						"Steamid": "76561198076819824",
+
+						"Name": "Lonster_Monster",
+
+						"Image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/6c/6cb3ce143f1a75878758dd2deffa2371f8f268d5_full.jpg",
+
+						"Role": "Admin, <br> Site Developer, <br> Bot Developer",
+
+						"Color": "Red"
+
+					}
+
+				},
+
+				"76561198047558675": {
+
+					"Profile": {
+
+						"Steamid": "76561198047558675",
+
+						"Name": "NGS | TheXeon",
+
+						"Image": "https://steamcdn-a.akamaihd.net/steamcommunity/public/images/avatars/24/24256abd6df195fdddb6286c624bb890f1b96c2c_full.jpg",
+
+						"Role": "Admin, <br> Bot Developer",
+
+						"Color": "Red"
+
+					}
+
+				}
+
+			}
+
+		},
+
+		"Description": {
+
+			"About": "MarketWh is an Independent Website for trading Steam Items from the Steam Platform. We try to keep or MarketWh Community active by having Giveaways, Trading with our Bot(s). Marketwh was created with the user in mind for a good trading expierence and we will update the bot code frequently and the site frequently to have the best user experiences."
+
+
+
+		}
+
+	},
+
+	"FAQ": {
+
+		"Questions": {
+
+			"Number": {
+
+				"1": {
+
+					"number": "one",
+
+					"question": "How do i trade with Marketwh steam bots?",
+
+					"answer": "You can Trade one of 2 ways<ul><li> Send a Trade offer to one of our Steam Bots </li><li> find the item on our site see the price of it and then click trade and send a trade offer like normal</li></ul>"
+
+				},
+
+				"2": {
+
+					"number": "two",
+
+					"question": "What is a Steam Bot?",
+
+					"answer": "A Steam Bot is an automated Trading Bot that will automatcally accept offers sent to it that are within the item price range of buying or selling."
+
+				},
+
+				"3": {
+
+					"number": "three",
+
+					"question": "Is there a way for me to have the bot to send a trade offer to me?",
+
+					"answer": "No, as of right now we cannot do that we will have an update in the near future that will have that feature."
+
+				},
+
+				"4": {
+
+					"number": "four",
+
+					"question": "What is the BETA at the top beside the Marketwh?",
+
+					"answer": "BETA just means this is the beginning of Marketwh."
+
+				}
+
+
+
+			}
+
+		}
+
+	}
+
+}
